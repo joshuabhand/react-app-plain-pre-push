@@ -1,5 +1,15 @@
 This project demonstrates a simple pre-push hook. No additional modules required.
 
+PROS
+- Very little change to project structure, dependency or otherwise
+
+CONS
+- The pre-push hook file resides in the .git directory which does not get pushed to repo; We must manually add this to our local repo.
+
+## The Gist of this approach
+
+Git hooks and scripts are described in pre-push hook.
+
 ## Install hook
 
 1) Navigate to .git/hooks and rename "pre-push.sample" to "pre-push"
